@@ -47,7 +47,7 @@ const Home = async (props: Props) => {
       </section>
 
       <section id='contact' className='snap-start'>
-        <ContactMe />
+        <ContactMe pageInfo={pageInfo} />
       </section>
 
       <Link href="#hero">

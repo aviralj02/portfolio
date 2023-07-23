@@ -2,7 +2,7 @@ import { client } from "@/sanity/sanity.client";
 import { groq } from "next-sanity";
 
 const query = groq`
-    *[_type == "project"]{
+    *[_type == "project"] | order(_updatedAt desc){
         ...,
         technologies[]->
     }
