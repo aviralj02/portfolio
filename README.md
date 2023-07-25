@@ -6,7 +6,7 @@
 * [Framer Motion](https://www.framer.com/motion/) - **Animations**
 * [VERCEL](https://vercel.com/) - **Deployment**
 
-Portfolio Link 👉 [![portfolio-badge](https://img.shields.io/badge/-Portfolio-000000?logo=aboutdotme&logoColor=white&style=flat)](https://www.aviral.xyz)
+Portfolio Link 👉 [![portfolio-badge](https://img.shields.io/badge/-Portfolio-454545?logo=aboutdotme&logoColor=white&style=plastic)](https://www.aviral.xyz)
 
 <hr />
 
