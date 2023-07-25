@@ -13,6 +13,7 @@ import React from 'react';
 
 type Props = {}
 
+// Next.js ISR every 60 seconds
 export const revalidate = 60;
 
 const Home = async (props: Props) => {
