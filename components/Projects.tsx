@@ -61,16 +61,23 @@ const Projects = ({ projects }: Props) => {
               </p>
 
               <div className="flex gap-5">
-                <Link href={project.linkToBuild} className="p-2 rounded-xl bg-black transition ease-in-out shadow-lg hover:shadow-gray-400 transform hover:-translate-y-1">
+                <Link
+                  href={project.linkToBuild}
+                  className="p-2 rounded-xl bg-black transition ease-in-out shadow-lg hover:shadow-gray-400 transform hover:-translate-y-1"
+                  target="_blank"
+                >
                   <CodeBracketIcon className="w-5 h-5" />
                 </Link>
                 {project.liveLink && (
-                  <Link href={project.liveLink} className="p-2 rounded-xl bg-black transition ease-in-out shadow-lg hover:shadow-gray-400 transform hover:-translate-y-1">
+                  <Link
+                    href={project.liveLink}
+                    className="p-2 rounded-xl bg-black transition ease-in-out shadow-lg hover:shadow-gray-400 transform hover:-translate-y-1"
+                    target="_blank"
+                  >
                     <ArrowTopRightOnSquareIcon className="w-5 h-5" />
                   </Link>
                 )}
               </div>
-              
             </div>
           </div>
         ))}
