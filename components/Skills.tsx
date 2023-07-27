@@ -22,7 +22,7 @@ const Skills = ({ skills }: Props) => {
         </h3>
 
         <h3 className='uppercase tracking-[3px] text-sm text-gray-500 py-5 px-7'>
-          Hover over to a skill for to see name
+          Hover over a skill to see name
         </h3>
       </div>
 
