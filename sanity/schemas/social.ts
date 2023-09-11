@@ -16,5 +16,10 @@ export default defineType({
       title: "Url",
       type: "url",
     }),
+    defineField({
+      name: "network",
+      title: "Network",
+      type: "string",
+    }),
   ],
 })

@@ -35,6 +35,7 @@ const Header = ({ socials }: Props) => {
             target='_blank'
             key={social.title}
             url={social.url}
+            network={social.network}
             fgColor="gray"
             bgColor="transparent"
           />
