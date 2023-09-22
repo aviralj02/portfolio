@@ -53,8 +53,8 @@ interface Project extends SanityBody{
 interface Social extends SanityBody{
     _type: "social"
     title: string;
+    iconImage: Image;
     url: string;
-    network: string;
 }
 
 interface Image extends SanityBody{

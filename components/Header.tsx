@@ -1,10 +1,10 @@
 "use client"
 
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import urlFor from '@/lib/urlFor';
 
 type Props = {
   socials: Social[];
@@ -14,7 +14,7 @@ const Header = ({ socials }: Props) => {
   return (
     <header className='sticky flex items-start top-0 p-5 justify-between max-w-7xl mx-auto xl:items-center z-30'>
       <motion.div 
-        className='flex flex-row items-center'
+        className='flex flex-row items-center gap-5 pt-[10px]'
         initial={{
           x: -500,
           opacity: 0,
@@ -31,14 +31,13 @@ const Header = ({ socials }: Props) => {
       >
         {/* Socials */}
         {socials.map((social: Social) => (
-          <SocialIcon
-            target='_blank'
-            key={social.title}
-            url={social.url}
-            network={social.network}
-            fgColor="gray"
-            bgColor="transparent"
-          />
+          <Link href={social.url} target='_blank' key={social.title}>
+            <img 
+              src={urlFor(social.iconImage).url()} 
+              alt={social.title} 
+              className='w-7 h-7 opacity-50' 
+            />
+          </Link>
         ))}
       </motion.div>
       

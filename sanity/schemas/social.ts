@@ -12,14 +12,17 @@ export default defineType({
       type: "string"
     }),
     defineField({
+      name: "iconImage",
+      title: "Icon Image",
+      type: "image",
+      options: {
+          hotspot: true
+      }
+    }),
+    defineField({
       name: "url",
       title: "Url",
       type: "url",
-    }),
-    defineField({
-      name: "network",
-      title: "Network",
-      type: "string",
     }),
   ],
 })
