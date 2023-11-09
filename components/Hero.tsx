@@ -12,7 +12,7 @@ type Props = {
 
 const Hero = ({ pageInfo }: Props) => {
     const [text, count] = useTypewriter({
-        words: [`Hi! The Name is ${pageInfo?.name}`],
+        words: [`Hi! I'm ${pageInfo?.name}`],
         loop: true,
         delaySpeed: 5000
     })
